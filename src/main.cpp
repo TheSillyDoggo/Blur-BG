@@ -2,7 +2,11 @@
 #include <Geode/modify/EditorPauseLayer.hpp>
 #include <Geode/modify/PauseLayer.hpp>
 #include <Geode/modify/FLAlertLayer.hpp>
+#ifdef GEODE_IS_WINDOWS
 #include <Geode/modify/GJDropdownLayer.hpp>
+#else
+#include <Geode/modify/GJDropDownLayer.hpp>
+#endif
 #include <Geode/modify/OptionsLayer.hpp>
 #include <Geode/modify/InfoLayer.hpp>
 #include <Geode/modify/ShardsPage.hpp>
