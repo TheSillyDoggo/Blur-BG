@@ -171,7 +171,7 @@ class $modify (ProfilePage)
 	{
 		ProfilePage::show();
 
-		if (!m_fields->blur)
+		if (!m_fields->blur && !getChildOfType<CCBlurLayer>(this, 0))
 		{
 			m_fields->blur = CCBlurLayer::create();
 			m_fields->blur->setZOrder(-69);
